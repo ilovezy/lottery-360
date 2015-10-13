@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Examples</title>
+    <link href="" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h2></h2>
+
+    </div>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+    // 获取一个 min 到 max 之间的整数，包括 min 和 max
+    function getOneRandomNum(min, max) {
+        var num = Math.ceil(Math.random() * max - min) + 1
+        return num
+    }
+    // 返回一个数组，个数和范围都定了的，且不重复
+    function getRandomArr(arrLength, min, max) {
+        var arr = [],
+            tempNum, i;
+        for (; arr.length < arrLength;) {
+            tempNum = getOneRandomNum(min, max);
+            var judge = true;
+            for (i = 0; i < arr.length; i++) {
+                if (arr[i] == tempNum) {
+                    judge = false
+                }
+            }
+            if (judge) {
+                arr.push(tempNum)
+            }
+        }
+        return arr
+    }
+
+    // var redBallArr = getRandomArr(7, 1, 33)
+    // console.log(redBallArr)
+    // console.log(redBallArr.length)
+    console.log(getRandomArr(7, 1, 33))
+    </script>
+</body>
+
+</html>

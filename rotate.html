@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Examples</title>
+    <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
+    <link href="Font-Awesome-master/css/font-awesome.min.css" rel="stylesheet">
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="cc-scroll">hello</h2>
+
+        <div class="anchor">
+            <i class="fa fa-angle-up hide"></i>
+            <i class="fa fa-angle-down"></i>
+        </div>
+
+    </div>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+    $(".anchor").click(function () {
+        $(this).children('i').toggleClass('hide')
+    })
+    </script>
+</body>
+
+</html>

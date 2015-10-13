@@ -1,0 +1,96 @@
+/* by cc at 2015-9-12 */
+
+
+/* cover materialize */
+
+.cc-navbar-brand {
+    font-size: 1.5em;
+}
+
+
+/* fifa 2014 */
+
+.cc-card-title {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    bottom: 5px;
+    opacity: 0.5;
+    padding: 5px 15px
+}
+
+td.active {
+    background: #ee6e73;
+    color: white
+}
+
+table tr td {
+    border: 1px solid #ddd;
+    background: #fafafa
+}
+
+table tr th {
+    text-align: center
+}
+
+
+/* guessq */
+
+.time-number {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+ul.balls li {
+    display: inline;
+}
+
+ul.balls li span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 6px;
+    text-align: center;
+    border-radius: 100%;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+@media (min-width:768px) {
+    ul.balls li span {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        margin: 15px;
+    }
+}
+
+ul.redBall li span {
+    color: #ee6e73
+}
+
+ul.blueBall li span {
+    color: #42a5f5
+}
+
+.redBallActive {
+    background: #ee6e73;
+    border: none;
+    color: white!important;
+}
+
+.blueBallActive {
+    background: #42a5f5;
+    border: none;
+    color: white!important;
+}
+
+.footer-btn {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
